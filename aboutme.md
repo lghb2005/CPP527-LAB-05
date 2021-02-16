@@ -6,7 +6,7 @@ subtitle: A virtual proof that I'm awesome
 
 My name is Robin(Guohuibin) Li. I have the following qualities:
 
-- I am taking CPP527 at ASU.
+- I am taking CPP 527 at ASU.
 - I find the course is cool!
 
 What else do you need?
