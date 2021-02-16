@@ -1,8 +1,18 @@
 ---
 layout: page
 title: Get Started
-subtitle: Why you'd want to go on a date with me
+subtitle: Build your website in 3 steps
 ---
+
+There's a very easy way to use this theme, and there's a hard way. For most people (including myself!), the easy route is recommended. If you're an advanced user and want to tinker with the hard way (using ruby gems), then [skip the easy way](https://github.com/daattali/beautiful-jekyll#the-hard-way-using-ruby-gems) if you know what you're doing.
+
+## The easy way (recommended!)
+
+Getting started is *literally* as easy as 1-2-3 :smile:
+
+Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
+
+![Installation steps](assets/img/install-steps.gif)
 
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
 
