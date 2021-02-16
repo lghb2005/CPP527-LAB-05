@@ -1,13 +1,13 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A virtual proof that I'm awesome
 ---
 
 My name is Robin(Guohuibin) Li. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I am taking CPP527 at ASU.
+- I find the course is cool!
 
 What else do you need?
 
