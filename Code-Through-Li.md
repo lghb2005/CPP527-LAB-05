@@ -20,18 +20,15 @@ We have already learned the fundamental to API and how to use API to  query cens
 
 ![](/assets/img/1.png)
 
-<br>
 
 ---
 
 ![](/assets/img/2.png)
 
 
-<center>
+
  
  **YOUR KEY IS NOW READY TO WORK!** 
- 
-</center>
 
 ---
 
