@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code-Through
-subtitle: tidycensus Package in quick steps
+subtitle: tidycensus Package in Quick
 ---
 
 <br>
@@ -68,6 +68,7 @@ age.00 <- get_decennial( geography = "state", variables = "P013001", year = 2000
 head( age.00, 10 ) %>% pander()
 
 ```
+![](/assets/img/git-1-1.PNG)
 
 The function returns a tibble with four columns by default: 
 
@@ -86,6 +87,8 @@ age.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order the 
   geom_point()
 
 ```
+![](/assets/img/git-1-2.PNG)
+
 <br>
 
 However, if you want to have a wide data frame (for better reports) with Census variable names in the columns, set output = "wide" in the function call.
@@ -99,12 +102,20 @@ age.10.wide <- get_decennial( geography = "state", variables = "P013001",
 # check the data we have queried
 head( age.10.wide, 10 )  %>% pander()
 
+```
+
+![](/assets/img/git-1-3.PNG)
+
+
+```r
 # print the median age for Arizona and California in 2010 and return in wide form
 get_decennial( geography = "state", state = c( "Arizona", "California" ), 
                variables = "P013001", year = 2010, output = "wide" ) %>% 
   pander() 
 
 ```
+
+![](/assets/img/git-1-4.PNG)
 
 ---
 
@@ -132,7 +143,7 @@ head( variable.00, 10 ) %>% pander()
 view( variable.00 )
 
 ```
-
+![](/assets/img/git-1-5.PNG)
 
 So, we can ask for the housing units ( name == "H001001" ) for 2000 by supplying the variables argument with "H001001." 
 
@@ -145,6 +156,8 @@ housing.00 <- get_decennial( geography = "state", variables = "H001001", year = 
 head( housing.00, 10 ) %>% pander()
 
 ```
+![](/assets/img/git-1-6.PNG)
+
 Similarly, because of the tidy format returned, We can plot the result directly using ggplot2 functions:  
 
 ```r
@@ -155,6 +168,8 @@ housing.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order 
   geom_col()
 
 ```
+
+![](/assets/img/git-1-7.PNG)
 
 ### Summary Files (sf)
 
@@ -213,16 +228,29 @@ To query data from different levels, we can supply an argument to the required *
 # get housing units by counties in 2000
 get_decennial( geography = "county", variables = "H001001", year = 2000 ) %>% 
   head() %>% pander()
+  
+```
+
+![](/assets/img/git-1-8.PNG)
+
+```r
 
 # get housing units in the US in 2000
 get_decennial( geography = "us", variables = "H001001", year = 2000 ) %>% 
   head() %>% pander()
+  
+```
+
+  ![](/assets/img/git-1-9.PNG)
+
+```r
 
 # get housing units by regions in 2000
 get_decennial( geography = "region", variables = "H001001", year = 2000 ) %>% 
   head() %>% pander()
-
+  
 ```
+![](/assets/img/git-1-10.PNG)
 
 Similarly, we can ask for data at different levels for median age in 2000 
 
@@ -232,11 +260,20 @@ Similarly, we can ask for data at different levels for median age in 2000
 get_decennial( geography = "county", variables = "P013001", year = 2000 ) %>% 
   head() %>% pander()
 
+```
+
+
+![](/assets/img/git-1-11.PNG)
+
+```r
+
 # print the median age for counties in Arizona and California in 2010 
 get_decennial( geography = "county", state = c( "Arizona", "California" ), 
                variables = "P013001", year = 2010 ) %>% pander() 
 ```
+![](/assets/img/git-1-12.PNG)
 
+**NOTE: only the first 19 rows are shown in the table above.** 
 
 <br>
 
