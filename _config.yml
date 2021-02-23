@@ -21,7 +21,8 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-    - Getting Started: "getstarted"                        
+    - Getting Started: "getstarted" 
+    - Code-Through: "Code-Through-Li"
   Author's home: "https://guohuibinli.com/"
   Table Demo: "table-demo"          
 
