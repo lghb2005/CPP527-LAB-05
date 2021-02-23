@@ -36,12 +36,12 @@ We have already learned the fundamental to API and how to use API to  query cens
 
 <center>
 
-![](1.png){width=70%}
+![](/assets/img/1.png){width=70%}
 <br>
 
 ---
 
-![](2.png){width=70%}
+![](/assets/img/2.png){width=70%}
 
  **YOUR KEY IS NOW READY TO WORK!** 
  </center>
@@ -177,7 +177,7 @@ housing.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order 
 Census data is presented in **4 separated Summary Files (sf1 to sf4)**. Each differs in data resolution, the kind of information it contains, and whether they are derived from a total count (100%) or a sample or the population:
 
 <center>
-![](5.png){width=70%}
+![](/assets/img/5.png){width=70%}
 
 
 Note: at the moment, access to the 1990 (SF1 and SF3) and 2000 (SF3) APIs has been suspended.
@@ -207,9 +207,9 @@ To query data from different levels, we can supply an argument to the required *
 
 <center>
 
-![](3.png){width=95%}
+![](/assets/img/3.png){width=95%}
 
-![](4.png){width=95%}
+![](/assets/img/4.png){width=95%}
 
 </center>
 
