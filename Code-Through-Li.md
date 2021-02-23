@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code-Through
-subtitle: tidycensus Package in Quick
+subtitle: tidycensus Package in Simple Steps 
 ---
 
 <br>
