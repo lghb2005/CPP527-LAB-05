@@ -1,25 +1,7 @@
 ---
-title: "Code-Through"
-author: "Robin(Guohuibin) Li"
-date: "25/02/2021"
-output: 
-  prettydoc::html_pretty:
-    theme: architect
-  html_document:
-    highlight: tango
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    fig_caption: true
-    code_folding: hide
----
-
-```{r setup, include=FALSE, warning=FALSE, message=FALSE}
-
-knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
-
-```
-
+layout: page
+title: Code-Through
+subtitle: tidycensus Package in quick steps
 ---
 
 <br>
@@ -36,12 +18,12 @@ We have already learned the fundamental to API and how to use API to  query cens
 
 <center>
 
-![](/assets/img/1.png){width=70%}
+![](/assets/img/1.png)
 <br>
 
 ---
 
-![](/assets/img/2.png){width=70%}
+![](/assets/img/2.png)
 
  **YOUR KEY IS NOW READY TO WORK!** 
  </center>
@@ -52,8 +34,7 @@ We have already learned the fundamental to API and how to use API to  query cens
 
 ## Load library
 
-```{r, message=FALSE}
-
+```
 library( tidycensus )   # census data in tidy format 
 library( tidyverse )    # tidy operations
 library( ggplot2 )      # nice plots    
@@ -61,7 +42,6 @@ library( pander )       # nice tables
 
 # replay with your API KEY 
 census_api_key( "69b310b6c76339cfd5da39f8c83c351045d1a14b" )
-
 ```
 
 
