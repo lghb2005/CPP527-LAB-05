@@ -34,7 +34,7 @@ We have already learned the fundamental to API and how to use API to  query cens
 
 ## Load library
 
-```
+```r
 library( tidycensus )   # census data in tidy format 
 library( tidyverse )    # tidy operations
 library( ggplot2 )      # nice plots    
@@ -55,7 +55,7 @@ One of major functions in tidycensus is **get_decennial()**. It connects the 200
 
 ### Examples
 
-```{r, message = F}
+```r
 
 # get median age by state in 2000
 age.00 <- get_decennial( geography = "state", variables = "P013001", year = 2000 )
@@ -74,7 +74,7 @@ The function returns a tibble with four columns by default:
 
 By default, tidycensus functions return **tidy data frames** in which columns represent variables and rows represent observations. Therefore, some simple plots can be done with ggplot2:
 
-```{r, fig.cap = "Median ages by US states 2000."}
+```r
 
 age.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order the age based on the sates
   xlab( "Median ages" ) +
@@ -86,7 +86,7 @@ age.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order the 
 
 However, if you want to have a wide data frame (for better reports) with Census variable names in the columns, set output = "wide" in the function call.
 
-```{r, message = F}
+```r
 
 # get median age by state in 2010 and return in wide form
 age.10.wide <- get_decennial( geography = "state", variables = "P013001", 
@@ -116,7 +116,7 @@ As you may note in the previous example, the get_decennial() requires knowing th
 
 ### Examples
 
-```{r}
+```r
 
 # set cache = TRUE to store the result on computer for future access
 # search the variables
@@ -132,7 +132,7 @@ view( variable.00 )
 
 So, we can ask for the housing units ( name == "H001001" ) for 2000 by supplying the variables argument with "H001001." 
 
-```{r}
+```r
 
 # get housing units by state in 2000
 housing.00 <- get_decennial( geography = "state", variables = "H001001", year = 2000 )
@@ -143,7 +143,7 @@ head( housing.00, 10 ) %>% pander()
 ```
 Similarly, because of the tidy format returned, We can plot the result directly using ggplot2 functions:  
 
-```{r, fig.cap = "Total Housing Units by US states 2000."}
+```r
 
 housing.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order the age based on the sates
   xlab( "Totoal housing units" ) +
@@ -157,7 +157,8 @@ housing.00 %>% ggplot( aes( x = value, y = reorder( NAME, value ) ) ) + # order 
 Census data is presented in **4 separated Summary Files (sf1 to sf4)**. Each differs in data resolution, the kind of information it contains, and whether they are derived from a total count (100%) or a sample or the population:
 
 <center>
-![](/assets/img/5.png){width=70%}
+ 
+![](/assets/img/5.PNG)
 
 
 Note: at the moment, access to the 1990 (SF1 and SF3) and 2000 (SF3) APIs has been suspended.
@@ -179,7 +180,9 @@ As we have noted, the variables starts with semantic meanings in categorical way
 Census surveys record data in various level. The census follows **the hierarchy:**
 
 <center>
+ 
 **USA -> State -> County -> Census Tract -> Census Block Group -> Census Block**
+
 </center>
 
 
@@ -187,9 +190,9 @@ To query data from different levels, we can supply an argument to the required *
 
 <center>
 
-![](/assets/img/3.png){width=95%}
+![](/assets/img/3.PNG) 
 
-![](/assets/img/4.png){width=95%}
+![](/assets/img/4.PNG) 
 
 </center>
 
@@ -200,7 +203,7 @@ To query data from different levels, we can supply an argument to the required *
 
 ### Examples
 
-```{r, message = F}
+```r
 
 # get housing units by counties in 2000
 get_decennial( geography = "county", variables = "H001001", year = 2000 ) %>% 
@@ -218,7 +221,7 @@ get_decennial( geography = "region", variables = "H001001", year = 2000 ) %>%
 
 Similarly, we can ask for data at different levels for median age in 2000 
 
-```{r, message = F}
+```r
 
 # print the median age for counties in 2010 
 get_decennial( geography = "county", variables = "P013001", year = 2000 ) %>% 
