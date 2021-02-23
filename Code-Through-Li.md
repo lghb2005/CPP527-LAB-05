@@ -16,17 +16,22 @@ We have already learned the fundamental to API and how to use API to  query cens
 - tidycensus is usually used along with the package "tidyverse", so be sure to install and load **THEM both** before calling any functions. 
 - the API key is for personal use only. Please obtain yours from [here](http://api.census.gov/data/key_signup.html). Be sure to **ACTIVATE** by clicking the link sent to your email.
 
-<center>
+
 
 ![](/assets/img/1.png)
+
 <br>
 
 ---
 
 ![](/assets/img/2.png)
 
+
+<center>
+ 
  **YOUR KEY IS NOW READY TO WORK!** 
- </center>
+ 
+</center>
 
 ---
 
@@ -247,4 +252,8 @@ get_decennial( geography = "county", state = c( "Arizona", "California" ),
 
 <br>
 
-<center> *This is the end of this tutorial, and many thanks for your attention!* </center>
+<center> 
+ 
+ *This is the end of this tutorial, and many thanks for your attention!* 
+ 
+</center>
