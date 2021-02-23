@@ -8,13 +8,13 @@ subtitle: tidycensus Package in Simple Steps
 
 # Introduction to tidycensus package 
 
-We have already learned the fundamental to API and how to use API to  query census data. Also, we have learned the tidy form of data that is essential for data analysts to perform tons of possible analyses. This code-through will introduce the basic of the package called tidycensus. The big merit working with this library is to have the tidy form returned of census data. 
+We have already learned the fundamental to API and how to use API to  query census data. Also, we have learned the tidy form of data that is handy for data analysts to perform tons of possible analyses. This code-through will introduce the basic of the package called tidycensus. The big merit working with this library is to have the tidy form returned for census data. 
 
 
 **Note:**
 
 - tidycensus is usually used along with the package "tidyverse", so be sure to install and load **THEM both** before calling any functions. 
-- the API key is for personal use only. Please obtain yours from [here](http://api.census.gov/data/key_signup.html). Be sure to **ACTIVATE** by clicking the link sent to your email.
+- the API key is for personal use. Please obtain yours from [here](http://api.census.gov/data/key_signup.html). Be sure to **ACTIVATE** by clicking the link sent to your email.
 
 
 
@@ -54,7 +54,7 @@ census_api_key( "69b310b6c76339cfd5da39f8c83c351045d1a14b" )
 <br>
 
 ## Function：get_decennial()
-One of major functions in tidycensus is **get_decennial()**. It connects the 2000 and 2010 decennial US Census APIs, Note: to access to all census datasets please consider [censusapi](https://github.com/hrecht/censusapi) package   .
+One of the two major functions in tidycensus is **get_decennial()**. It connects the 2000 and 2010 decennial US Census APIs, Note: to access to all census datasets please consider [censusapi](https://github.com/hrecht/censusapi) package.
 
 
 ### Examples
@@ -77,7 +77,7 @@ The function returns a tibble with four columns by default:
 - **variable**: the Census variable represented in the row; 
 - **value**: the value of the variable for that unit. 
 
-By default, tidycensus functions return **tidy data frames** in which columns represent variables and rows represent observations. Therefore, some simple plots can be done with ggplot2:
+By default, tidycensus functions return **tidy data frames** in which columns represent variables and rows represent observations. Therefore, we can plot the data directly:
 
 ```r
 
@@ -206,7 +206,7 @@ Census surveys record data in various level. The census follows **the hierarchy:
 </center>
 
 
-To query data from different levels, we can supply an argument to the required **geography** parameter.  Arguments are formatted as consumed by the Census API, and specified in the table below: 
+To query data from different levels, we can supply an argument to the required **geography** parameter. Arguments are formatted as consumed by the Census API, and specified in the table below: 
 
 
 ![](/assets/img/3.PNG) 
