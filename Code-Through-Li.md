@@ -8,7 +8,7 @@ subtitle: tidycensus Package in Simple Steps
 
 # Introduction to tidycensus package 
 
-We have already learned the fundamental to API and how to use API to  query census data. Also, we have leaned the tidy form of data that is essential for data analysts to perform tons of possible analyses. This code-through will introduce the basic of the package called tidycensus. The big merit working with this library is to have the tidy form returned of census data. 
+We have already learned the fundamental to API and how to use API to  query census data. Also, we have learned the tidy form of data that is essential for data analysts to perform tons of possible analyses. This code-through will introduce the basic of the package called tidycensus. The big merit working with this library is to have the tidy form returned of census data. 
 
 
 **Note:**
